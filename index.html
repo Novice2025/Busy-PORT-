@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The B.B.C. - Daby</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #141414;
+            font-family: 'Inter', sans-serif;
+            color: #e5e5e5;
+        }
+
+        .text-netflix-red {
+            color: #e50914;
+        }
+
+        .bg-netflix-dark {
+            background-color: #141414;
+        }
+
+        .bg-card {
+            background-color: #222222;
+        }
+        
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        /* Netflix-like scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #222222;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #555555;
+            border-radius: 4px;
+        }
+
+        .expression-block {
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1-px rgba(0, 0, 0, 0.06);
+        }
+
+        .expression-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #e50914;
+            margin-bottom: 0.5rem;
+        }
+
+        .expression-text {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #fde047;
+            margin-top: 1rem;
+        }
+
+        .play-button {
+            background-color: #e50914;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .play-button:hover {
+            background-color: #ff001c;
+        }
+    </style>
+</head>
+<body class="bg-netflix-dark">
+    <div class="relative w-full h-full min-h-screen">
+        <!-- Header Section -->
+        <header class="p-6 md:p-8 flex items-center justify-between">
+            <h1 class="font-bebas text-4xl md:text-5xl text-netflix-red leading-none">Business English for Brazilians</h1>
+            <nav>
+                <!-- Empty for Netflix-style look -->
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="p-6 md:p-8 max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-semibold mb-6">Como Expressar que Você Está Ocupado</h2>
+            <p class="mb-12 text-lg">
+                Esta lição oferece frases e expressões para comunicar que você tem uma agenda cheia, em diferentes situações do dia a dia de trabalho. Clique nos botões para ouvir a pronúncia.
+            </p>
+            
+            <!-- Lessons Section -->
+            <section class="space-y-12">
+                <div class="expression-block bg-card">
+                    <h3 class="expression-title">Situação 1: Você é abordado(a) no corredor para um assunto não urgente. 🗣️</h3>
+                    <p class="text-lg">
+                        Use estas frases curtas e educadas para sinalizar que você está com pressa e precisa voltar para o trabalho.
+                    </p>
+                    <div class="mt-4 space-y-4">
+                        <div class="p-4 bg-gray-800 rounded-lg">
+                            <h4 class="font-bold text-lg text-yellow-300">Respostas Diretas:</h4>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "I am in the middle of something." 
+                                </p>
+                                <button class="play-button" onclick="playAudio('I am in the middle of something.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Estou no meio de algo."
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "I’m tied up at the moment, but I’ll get back to you later."
+                                </p>
+                                <button class="play-button" onclick="playAudio('I’m tied up at the moment, but I’ll get back to you later.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Estou ocupado no momento, mas eu te procuro mais tarde."
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "I’m occupied with a priority task right now."
+                                </p>
+                                <button class="play-button" onclick="playAudio('I’m occupied with a priority task right now.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Estou ocupado com uma tarefa prioritária no momento."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expression-block bg-card">
+                    <h3 class="expression-title">Situação 2: Um colega te pede ajuda com um novo projeto. 🤝</h3>
+                    <p class="text-lg">
+                        Comunique sua carga de trabalho de forma profissional, oferecendo alternativas e mantendo a colaboração.
+                    </p>
+                    <div class="mt-4 space-y-4">
+                        <div class="p-4 bg-gray-800 rounded-lg">
+                            <h4 class="font-bold text-lg text-yellow-300">Para descrever sua carga de trabalho:</h4>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "I have a full workload at the moment."
+                                </p>
+                                <button class="play-button" onclick="playAudio('I have a full workload at the moment.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Eu tenho uma carga de trabalho completa no momento."
+                                </p>
+                            </div>
+                            
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "My current commitments are quite extensive."
+                                </p>
+                                <button class="play-button" onclick="playAudio('My current commitments are quite extensive.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Meus compromissos atuais são bastante extensos."
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "I am managing a heavy workload right now."
+                                </p>
+                                <button class="play-button" onclick="playAudio('I am managing a heavy workload right now.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Estou gerenciando uma carga de trabalho pesada no momento."
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "I am currently handling a significant volume of work."
+                                </p>
+                                <button class="play-button" onclick="playAudio('I am currently handling a significant volume of work.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Estou lidando com um volume de trabalho significativo no momento."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-gray-800 rounded-lg">
+                            <h4 class="font-bold text-lg text-yellow-300">Para oferecer uma solução:</h4>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "Would you mind if I get back to you once I’m less busy?"
+                                </p>
+                                <button class="play-button" onclick="playAudio('Would you mind if I get back to you once I’m less busy?')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Você se importaria se eu te respondesse quando estiver menos ocupado?"
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "I recommend reaching out to [Colleague’s Name] who can assist in the meantime."
+                                </p>
+                                <button class="play-button" onclick="playAudio('I recommend reaching out to [Colleague’s Name] who can assist in the meantime.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Eu recomendo procurar [Nome do Colega] que pode ajudar enquanto isso."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adicionando a nova frase no meio da página -->
+                <div class="expression-block bg-card">
+                    <h3 class="expression-title">I am busy. (Pode soar agressivo) 🚨</h3>
+                    <p class="text-lg">
+                        A frase **"I am busy"** é uma maneira direta de dizer que você está ocupado. No entanto, em um ambiente de trabalho profissional, ela pode soar um pouco abrupta ou até mesmo rude, especialmente se usada sem um contexto adicional. É por isso que é importante escolher expressões mais detalhadas e educadas.
+                    </p>
+                    <div class="mt-4 space-y-4">
+                        <div class="p-4 bg-gray-800 rounded-lg">
+                            <h4 class="font-bold text-lg text-yellow-300">Exemplos:</h4>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "**I am busy**"
+                                </p>
+                                <button class="play-button" onclick="playAudio('I am busy')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Estou ocupado"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim da nova frase adicionada -->
+
+                <div class="expression-block bg-card">
+                    <h3 class="expression-title">Situação 3: Seu chefe te pede uma nova responsabilidade. 📊</h3>
+                    <p class="text-lg">
+                        Use estas frases para ser transparente sobre sua agenda e demonstrar que você está focado(a) nas prioridades atuais.
+                    </p>
+                    <div class="mt-4 space-y-4">
+                        <div class="p-4 bg-gray-800 rounded-lg">
+                            <h4 class="font-bold text-lg text-yellow-300">Frases para descrever sua situação:</h4>
+                            <div class="flex items-center gap-2">
+                                 <p class="text-sm mt-2">
+                                    **English:** "I am fully engaged with my current tasks."
+                                </p>
+                                <button class="play-button" onclick="playAudio('I am fully engaged with my current tasks.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                 <p class="text-sm">
+                                    **Portuguese:** "Estou totalmente envolvido com minhas tarefas atuais."
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                 <p class="text-sm mt-2">
+                                    **English:** "I’m currently focused on several important responsibilities."
+                                </p>
+                                <button class="play-button" onclick="playAudio('I’m currently focused on several important responsibilities.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                 <p class="text-sm">
+                                    **Portuguese:** "Estou focado em várias responsabilidades importantes no momento."
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "My schedule is fully booked today."
+                                </p>
+                                <button class="play-button" onclick="playAudio('My schedule is fully booked today.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Minha agenda está totalmente preenchida hoje."
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "I’m currently handling several high-priority projects with tight deadlines."
+                                </p>
+                                <button class="play-button" onclick="playAudio('I’m currently handling several high-priority projects with tight deadlines.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Estou lidando com vários projetos de alta prioridade com prazos apertados."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expression-block bg-card">
+                    <h3 class="expression-title">Situação 4: Recusando uma nova oportunidade educadamente. ✨</h3>
+                    <p class="text-lg">
+                        Use estas frases para manter a porta aberta para o futuro, mesmo que não possa se comprometer no momento.
+                    </p>
+                    <div class="mt-4 space-y-4">
+                        <div class="p-4 bg-gray-800 rounded-lg">
+                            <h4 class="font-bold text-lg text-yellow-300">Frases para manter o profissionalismo:</h4>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "I’m fully committed right now, but I look forward to collaborating on future projects."
+                                </p>
+                                <button class="play-button" onclick="playAudio('I’m fully committed right now, but I look forward to collaborating on future projects.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Estou totalmente comprometido no momento, mas espero colaborar em projetos futuros."
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm mt-2">
+                                    **English:** "I appreciate your understanding and patience while I manage my current workload."
+                                </p>
+                                <button class="play-button" onclick="playAudio('I appreciate your understanding and patience while I manage my current workload.')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <p class="text-sm">
+                                    **Portuguese:** "Agradeço sua compreensão e paciência enquanto gerencio minha carga de trabalho atual."
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                 <p class="text-sm mt-2">
+                                    **English:** "Could we schedule this for a later time when I have more availability?"
+                                </p>
+                                <button class="play-button" onclick="playAudio('Could we schedule this for a later time when I have more availability?')">Play</button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                 <p class="text-sm">
+                                    **Portuguese:** "Poderíamos agendar isso para um momento posterior quando eu tiver mais disponibilidade?"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="p-6 text-center text-sm text-gray-500">
+            <p>&copy; 2025 Comunicação Empresarial Brasileira - Criado por Daby. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    
+    <script>
+        // --- Audio Playback Functions ---
+        
+        /**
+         * Converts a Base64 string to an ArrayBuffer.
+         * @param {string} base64 The Base64 encoded string.
+         * @returns {ArrayBuffer}
+         */
+        const base64ToArrayBuffer = (base64) => {
+            const binaryString = window.atob(base64);
+            const len = binaryString.length;
+            const bytes = new Uint8Array(len);
+            for (let i = 0; i < len; i++) {
+                bytes[i] = binaryString.charCodeAt(i);
+            }
+            return bytes.buffer;
+        };
+
+        /**
+         * Converts PCM data to a WAV Blob.
+         * @param {Int16Array} pcmData The PCM audio data.
+         * @param {number} sampleRate The sample rate of the audio.
+         * @returns {Blob}
+         */
+        const pcmToWav = (pcmData, sampleRate) => {
+            const buffer = new ArrayBuffer(44 + pcmData.byteLength);
+            const view = new DataView(buffer);
+
+            // RIFF chunk descriptor
+            writeString(view, 0, 'RIFF');
+            view.setUint32(4, 36 + pcmData.byteLength, true);
+            writeString(view, 8, 'WAVE');
+
+            // fmt chunk
+            writeString(view, 12, 'fmt ');
+            view.setUint32(16, 16, true);
+            view.setUint16(20, 1, true); // PCM format
+            view.setUint16(22, 1, true); // Mono channel
+            view.setUint32(24, sampleRate, true);
+            view.setUint32(28, sampleRate * 2, true);
+            view.setUint16(32, 2, true);
+            view.setUint16(34, 16, true); // 16 bits per sample
+
+            // data chunk
+            writeString(view, 36, 'data');
+            view.setUint32(40, pcmData.byteLength, true);
+
+            // Write PCM data
+            for (let i = 0; i < pcmData.length; ++i) {
+                view.setInt16(44 + i * 2, pcmData[i], true);
+            }
+
+            return new Blob([view], { type: 'audio/wav' });
+        };
+        
+        // Helper function to write a string to a DataView
+        function writeString(view, offset, string) {
+            for (let i = 0; i < string.length; i++) {
+                view.setUint8(offset + i, string.charCodeAt(i));
+            }
+        }
+
+        // Global AudioContext and source for single instance playback
+        let audioContext;
+        let audioSource;
+        
+        // Function to create and play audio from the TTS API
+        async function playAudio(text) {
+            // Get the button that triggered the event to show a loading state
+            const button = event.target;
+            const originalText = button.textContent;
+            button.textContent = "Carregando...";
+            button.disabled = true;
+
+            // Stop any currently playing audio
+            if (audioSource) {
+                audioSource.stop();
+                audioSource = null;
+            }
+
+            try {
+                // Construct the payload for the TTS API call
+                const payload = {
+                    contents: [{
+                        parts: [{ text: text }]
+                    }],
+                    generationConfig: {
+                        responseModalities: ["AUDIO"],
+                        speechConfig: {
+                            voiceConfig: {
+                                prebuiltVoiceConfig: { voiceName: "Puck" }
+                            }
+                        }
+                    },
+                    model: "gemini-2.5-flash-preview-tts"
+                };
+
+                const apiKey = "";
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`;
+
+                let response;
+                let retries = 0;
+                const maxRetries = 5;
+                const baseDelay = 1000;
+
+                while (retries < maxRetries) {
+                    try {
+                        response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        if (response.ok) {
+                            break;
+                        } else if (response.status === 429) { // Too Many Requests
+                            const delay = baseDelay * Math.pow(2, retries);
+                            retries++;
+                            await new Promise(res => setTimeout(res, delay));
+                        } else {
+                            throw new Error(`API returned status ${response.status}`);
+                        }
+                    } catch (error) {
+                        if (retries === maxRetries - 1) {
+                            throw error;
+                        }
+                        const delay = baseDelay * Math.pow(2, retries);
+                        retries++;
+                        await new Promise(res => setTimeout(res, delay));
+                    }
+                }
+
+                if (!response || !response.ok) {
+                    throw new Error("Failed to fetch audio after multiple retries.");
+                }
+
+                const result = await response.json();
+                const part = result?.candidates?.[0]?.content?.parts?.[0];
+                const audioData = part?.inlineData?.data;
+                const mimeType = part?.inlineData?.mimeType;
+
+                if (!audioData || !mimeType || !mimeType.startsWith("audio/")) {
+                    console.error("Invalid API response format for audio.");
+                    return;
+                }
+
+                const sampleRateMatch = mimeType.match(/rate=(\d+)/);
+                const sampleRate = sampleRateMatch ? parseInt(sampleRateMatch[1], 10) : 16000;
+
+                const pcmData = base64ToArrayBuffer(audioData);
+                
+                // The Web Audio API cannot decode raw PCM data directly. We must first convert it to a WAV file format.
+                const pcm16 = new Int16Array(pcmData);
+                const wavBlob = pcmToWav(pcm16, sampleRate);
+                const audioUrl = URL.createObjectURL(wavBlob);
+
+                // Fetch the new WAV Blob URL and decode the resulting ArrayBuffer.
+                const audioResponse = await fetch(audioUrl);
+                const arrayBuffer = await audioResponse.arrayBuffer();
+
+                // Create a new AudioContext if it doesn't exist
+                if (!audioContext) {
+                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                }
+
+                // Decode the audio data from the ArrayBuffer of the WAV file
+                const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+
+                // Create a buffer source and connect it
+                audioSource = audioContext.createBufferSource();
+                audioSource.buffer = audioBuffer;
+                audioSource.connect(audioContext.destination);
+
+                // Play the sound
+                audioSource.start();
+
+                // Reset button text after playback finishes
+                audioSource.onended = () => {
+                    button.textContent = originalText;
+                    button.disabled = false;
+                    audioSource = null; // Reset source after it has finished playing
+                };
+
+            } catch (error) {
+                console.error("Error playing audio:", error);
+                // Optionally show a message to the user
+                button.textContent = "Erro!";
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.disabled = false;
+                }, 2000);
+            }
+        }
+    </script>
+</body>
+</html>
